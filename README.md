@@ -5,5 +5,5 @@ Directorio Archivos
 * ORT Uruguay
 
 
-
+![alt text](https://github.com/McPetro/DA1_DirectorioArchivos/blob/master/1.PNG "Ventana principal")
 
