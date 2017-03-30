@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.buttonArchivo = new System.Windows.Forms.Button();
-            this.textArchivo = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonArchivo
@@ -42,32 +42,33 @@
             this.buttonArchivo.TabIndex = 4;
             this.buttonArchivo.Text = "Agregar Archivo";
             this.buttonArchivo.UseVisualStyleBackColor = true;
+            this.buttonArchivo.Click += new System.EventHandler(this.buttonArchivo_Click);
             // 
-            // textArchivo
+            // txtNombre
             // 
-            this.textArchivo.Location = new System.Drawing.Point(25, 15);
-            this.textArchivo.Name = "textArchivo";
-            this.textArchivo.Size = new System.Drawing.Size(378, 20);
-            this.textArchivo.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(25, 15);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(378, 20);
+            this.txtNombre.TabIndex = 3;
             // 
-            // dataGridView1
+            // dataGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 56);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(588, 250);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Location = new System.Drawing.Point(0, 56);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.Size = new System.Drawing.Size(588, 250);
+            this.dataGrid.TabIndex = 5;
             // 
             // AgregarArchivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGrid);
             this.Controls.Add(this.buttonArchivo);
-            this.Controls.Add(this.textArchivo);
+            this.Controls.Add(this.txtNombre);
             this.Name = "AgregarArchivo";
             this.Size = new System.Drawing.Size(588, 306);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,7 +77,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonArchivo;
-        private System.Windows.Forms.TextBox textArchivo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.DataGridView dataGrid;
     }
 }

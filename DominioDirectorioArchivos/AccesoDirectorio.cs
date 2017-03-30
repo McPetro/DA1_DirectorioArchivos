@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DominioDirectorioArchivos
 {
-    class AccesoDirectorio
+    public class AccesoDirecto
     {
+        public Archivo Fuente { get; set; }
+
+        public string Nombre { get; set; }
+
+        public override string ToString()
+        {
+            return Nombre;
+        }
     }
 }

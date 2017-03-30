@@ -8,9 +8,9 @@ namespace DirectorioArchivos
         private Directorio directorioActual;
         public VentanaPrincipal()
         {
-            InitializeComponent();
-            this.CargarUserControlsArchivo();
             directorioActual = new Directorio();
+            InitializeComponent();
+            this.CargarUserControlsArchivo(); 
 
 
         }
@@ -18,7 +18,7 @@ namespace DirectorioArchivos
         private void CargarUserControlsArchivo() {
 
             this.panelPrincipal.Controls.Clear();
-            this.panelPrincipal.Controls.Add(new AgregarArchivo());
+            this.panelPrincipal.Controls.Add(new AgregarArchivo(this.panelPrincipal, directorioActual));
         }
 
          
